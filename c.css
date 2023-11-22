@@ -1,0 +1,316 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    /* background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%); */
+    background: radial-gradient(circle at 1.9% 41.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(230, 100, 20) 24.4%, rgb(246, 56, 4) 24.5%, rgb(241, 74, 27) 66%);
+}
+header{
+    position: relative;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlist a:hover{
+    border-bottom: 2px solid white ;
+}
+#menu-icon{
+    color: white;
+    font-size: 35px;
+    z-index: 10001; 
+    cursor: pointer;
+    display: none;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient();
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+section{
+    padding: 0 19%;
+}
+.hero-text h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+}
+.hero-text h1{
+    font-family: fantasy;
+    font-size: 90px;
+    line-height: 1;
+    color: white;
+    margin: 0 0 45px;
+}
+.hero-text h4{
+    font-size: 18px;
+    font-weight:600;
+    color: white;
+    margin-bottom: 10px;
+}
+.hero-text p{
+    color: white;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+.hero-img img{
+    width: 700px; 
+    height: auto;
+}
+.hero-text a{
+    display: inline-block;
+    color: white;
+    background: #4d9559;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+} 
+.hero-text a:hover{
+    background: transparent;
+    border: 1px solid white;
+    transform: translate(8px);
+}
+.hero-text a.ctaa{
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+.hero-text a.ctaa i{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* services */
+.services {
+    width: 100%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-item {
+    background-color:var(--background-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.service-item i {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.service-item h2 {
+    color:var(--secondary-color);
+}
+
+.service-item p {
+    color:var(--primary-color);
+}
+
+.read-more {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #555;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    background-color:transparent;
+    color: black;
+    padding: 20px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    /* flex: 1; */
+    margin-right: 20px;
+    margin-bottom: 0px;
+}
+
+.footer-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    background-color:rgb(255, 149, 0);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+    font-size: 18px;
+    text-decoration: none;
+}
+.background-image{
+    background-image: url(./c.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+@media(max-width: 1535px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+    .icons{
+        padding: 0 3%;
+        transition: .2s;
+    }
+}
+@media(max-width: 1460px){
+    section{
+        padding:0 12%;
+        transition: .2s;
+    }
+}
+@media(max-width: 1340px){
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+    .hero-text h1{
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+    .hero-text h5{
+        margin-bottom: 25px;
+    }
+}
+@media(max-width: 1195px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .hero-text{
+        padding-top: 115px;
+    }
+    .hero-img{
+        text-align: center;
+    }
+    .hero-img img{
+        width: 550px;
+        height: auto;
+    }
+    .hero{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 990px){
+    #menu-icon{
+        display: flex;
+        
+    }
+    .navlist{
+        position: absolute;
+        /* top: 100%; */
+        right: -50%;
+        width: 200px;
+        height: 40vh;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+    .navlist a{
+        font-size: 10px;
+        margin-left: 0;
+        display: block;
+        margin: 7px 0;
+    }
+    .navlist.open{
+        right: 0;
+    }
+    .background-image{
+    background-image: url(./c.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+}
+@media (max-width: 680px) {
+    .hero-img img{
+        width:100%;
+        height: auto;
+    }
+}
